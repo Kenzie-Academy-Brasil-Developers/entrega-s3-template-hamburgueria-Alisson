@@ -1,0 +1,30 @@
+@import url(../../Styles/globalStyles.scss);
+
+@media (width > 700px){
+    .productList{
+        margin-top: 17px;
+        margin-left: 7.25vw;
+        width: 85.5vw;
+        display: grid;
+        column-gap: auto;
+        justify-content: space-between;
+        row-gap: 52px;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fill, 300px);
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+}
+@media (width < 700px) {
+    .productList{
+        width: 100%;
+        margin-top: 17px;
+        display: flex;
+        overflow-x: auto;
+        width: calc(100% - 16px);
+        margin-left: 16px;
+        gap: 20px;
+        height: auto;
+        padding: 30px 20px 10px 0;
+    }
+}

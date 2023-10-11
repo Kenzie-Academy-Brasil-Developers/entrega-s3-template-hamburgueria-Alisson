@@ -1,0 +1,183 @@
+@import url("../../Styles/globalStyles.scss");
+@media (width > 768px) {
+    .header{
+        box-sizing: border-box;
+        width: 100%;
+        background-color: var(--grey0);
+        display: flex;
+        padding: 10px 7.25vw;
+        align-items: center;
+        justify-content: space-between;
+        div{
+            display: flex;
+            gap: 28px;
+            position: relative;
+            align-items: center;
+            button{
+                background-color: var(--grey0);
+                border: none;
+                position: relative;
+                height: 42px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                cursor: pointer;
+                font-family: "Inter", sans-serif;
+                .cart{
+                    height: 25px;
+                    width: 25px;
+                    color: #BDBDBD;
+                    font-size: 30px;
+                }
+                span{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 24px;
+                    color: #FFF;
+                    border-radius: 7px;
+                    background-color: var(--colorPrimary);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 900;
+                    line-height: 0;
+                    font-family: "Inter", sans-serif;
+                }
+            }
+            form{
+                width: 365px;
+                input{
+                    width: 100%;
+                    background-color: #fff;
+                    height: 60px;
+                    border-radius: 8px;
+                    border: 2px solid var(--grey100);
+                    padding: 0 0 0 15px;
+                    color: var(--grey100);
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: "Inter", sans-serif;
+                }
+                input:focus{
+                    color: var(--grey300);
+                }
+                button{
+                    height: 40px;
+                    position: absolute;
+                    padding: 0 20px;
+                    right: 0;
+                    top: calc(50% - 20px);
+                    background-color: var(--colorPrimary);
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFF;
+                    font-weight: 900;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    font-family: "Inter", sans-serif;
+                }
+            }
+        }
+    }
+}
+@media (width <= 768px){
+    .header{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 27px 16px 20px 16px;
+        gap: 22px;
+        background-color: var(--grey0);
+        img{
+            width: 150px;
+            height: 22px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            position: relative;
+            align-items: center;
+            position: relative;
+            button{
+                background-color: var(--grey0);
+                border: none;
+                position: absolute;
+                top: -50px;
+                right: 0;
+                height: 42px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                cursor: pointer;
+                font-family: "Inter", sans-serif;
+                .cart{
+                    height: 25px;
+                    width: 25px;
+                    color: #BDBDBD;
+                    font-size: 30px;
+                }
+                span{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 24px;
+                    color: #FFF;
+                    border-radius: 7px;
+                    background-color: var(--colorPrimary);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 900;
+                    line-height: 0;
+                    font-family: "Inter", sans-serif;
+                }
+            }
+            form{
+                width: 100%;
+                input{
+                    box-sizing: border-box;
+                    width: 100%;
+                    background-color: #fff;
+                    height: 60px;
+                    border-radius: 8px;
+                    border: 2px solid var(--grey100);
+                    padding: 0 0 0 15px;
+                    color: var(--grey100);
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: "Inter", sans-serif;
+                }
+                input::placeholder{
+                    color: var(--grey100);
+                }
+                input:focus{
+                    color: var(--grey300);
+                }
+                button{
+                    height: 40px;
+                    position: absolute;
+                    padding: 0 20px;
+                    right: 15px;
+                    top: calc(50% - 20px);
+                    background-color: var(--colorPrimary);
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFF;
+                    font-weight: 900;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    font-family: "Inter", sans-serif;
+                }
+            }
+        }
+    }
+}

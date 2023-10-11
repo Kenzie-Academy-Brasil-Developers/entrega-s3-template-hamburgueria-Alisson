@@ -1,0 +1,10 @@
+@import url("./Styles/globalStyles.scss");
+@import url("./Styles/reset.scss");
+
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
